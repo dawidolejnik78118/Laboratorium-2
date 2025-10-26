@@ -1,7 +1,0 @@
-<!ELEMENT rejestr (osoba+)>
-<!ELEMENT osoba (imie, nazwisko, plec, wiek)>
-<!ATTLIST osoba id ID #REQUIRED>
-<!ELEMET imie (#PCDATA)>
-<!ELEMET nazwisko (#PCDATA)>
-<!ELEMET plec (#PCDATA)>
-<!ELEMET wiek (#PCDATA)>
