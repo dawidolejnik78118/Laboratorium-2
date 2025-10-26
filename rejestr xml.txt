@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rejestr>
+	<osoba id="1">
+		<imie>Dawid</imie>
+		<nazwisko>Olejnik</nazwisko>
+		<plec>Mężczyzna</plec>
+		<wiek>23</wiek>
+	</osoba>
+</rejestr>
