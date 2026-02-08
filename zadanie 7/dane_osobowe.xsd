@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="dane_osobowe">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="osoba" type="typOsoby"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="typOsoby">
+        <xs:sequence>
+            <xs:element name="imie" type="typImie"/>
+            <xs:element name="nazwisko" type="typNazwisko"/>
+            <xs:element name="plec" type="typPlec"/>
+            <xs:element name="wiek" type="typWiek"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="typImie">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+            <xs:maxLength value="30"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="typNazwisko">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+            <xs:maxLength value="40"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="typPlec">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="mężczyzna"/>
+            <xs:enumeration value="kobieta"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="typWiek">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="120"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
