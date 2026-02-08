@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dane_osobowe>
+    <osoba>
+        <imie>Dawid</imie>
+        <nazwisko>Olejnik</nazwisko>
+        <plec>mężczyzna</plec>
+        <wiek>23</wiek>
+    </osoba>
+</dane_osobowe>
