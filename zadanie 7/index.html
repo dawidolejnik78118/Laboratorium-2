@@ -1,33 +1,30 @@
-<!DOCTYPE html>
-<html lang="pl"
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Strona internetowa</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header>
-		<h1>Moja pierwsza strona</h1>
-	</header>
+<main>
+    <section>
+        <h2>O projekcie</h2>
+        <p>Strona wykonana w ramach ćwiczeń z technologii internetowych</p>
+    </section>
 
-	<nav>
-		<ul>
-			<li><a href="index.html">Start</a></li>
-			<li><a href="galeria.html">Galeria</a></li>
-		</ul>
-	</nav>
+    <section>
+        <h2>Formularz</h2>
 
-	<main>
-		<section>
-			<h2>O projekcie</h2>
-			<p>Strona wykonana w ramach ćwiczeń z technologii internetowych</p>
-		</section>
-	</main>
+        <form>
+            <label>Imię:
+                <input type="text" name="imie">
+            </label>
+            <br><br>
 
-	<footer>
-		<p>&copy;2025 Autor: Dawid Olejnik</p>
-	</footer>
-</body>
+            <label>Nazwisko:
+                <input type="text" name="nazwisko">
+            </label>
+            <br><br>
 
-</html>
+            <span>Płeć:</span><br>
+            <label><input type="radio" name="plec" value="m"> Mężczyzna</label><br>
+            <label><input type="radio" name="plec" value="k"> Kobieta</label><br><br>
+
+            <label>Wiek:
+                <input type="text" name="wiek">
+            </label>
+        </form>
+    </section>
+</main>
