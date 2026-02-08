@@ -1,0 +1,3 @@
+W metodzie GET parametry znajdują się w URL
+Są widoczne w adresie i mogą być odczytane przez użytkownika oraz zapisane w logach
+GET wysyła dane w URL, a POST wysyła dane w body
